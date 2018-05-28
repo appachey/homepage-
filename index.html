@@ -44,7 +44,8 @@
     <link rel="me" href="mailto:appachey@gmail.com">
     <link rel="me" href="tel:+380958504928">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/header.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/container.min.css">
@@ -52,44 +53,119 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/divider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/label.min.css">
-    <title>Sergey Bychkov — Résumé</title>
+    <!--<link rel="stylesheet" href="styles/style.css">-->
     <style type="text/css">
-      .masthead.segment {
-      min-height: 350px;
-      padding: 1em 0em;
+      html { font-size: 14px; }
+      html, body { height: 100%; }
+      body { font-weight: 300; font-family: 'Raleway', sans-serif; line-height: 1.4285em; color: rgba(0, 0, 0, 0.87); }
+      strong { font-weight: 600; }
+      h1, h2, h3, h4, h5 { line-height: 1.28571429em; margin: calc(2rem -	0.14285714em ) 0em 1rem; font-weight: bold; padding: 0em; }
+      h1:first-child,
+      h2:first-child,
+      h3:first-child,
+      h4:first-child,
+      h5:first-child {
+        margin-top: 0em;
       }
-      .ui.divider:not(.vertical):not(.horizontal) {
-        border-top: 1px solid rgb(255, 255, 255);
-        border-bottom: 1px solid rgb(255, 255, 255);
-}
+      h1:last-child,
+      h2:last-child,
+      h3:last-child,
+      h4:last-child,
+      h5:last-child {
+        margin-bottom: 0em;
+      }
+      h1, h2, h3, h4 { text-transform: uppercase; }
+      h1 { font-weight: 600; font-size: 3rem; font-family: 'Raleway', sans-serif; margin-bottom: 0; }
+      h2 { font-weight: 600; font-size: 3rem; font-family: 'Raleway', sans-serif; letter-spacing: 0.25em; }
+      h3 { font-weight: 300; font-size: 1.0625rem; font-family: 'Raleway', sans-serif; letter-spacing: 0.05em; }
+      h4 { font-weight: 400i; font-size: 1rem; font-family: 'Raleway', sans-serif; letter-spacing: 0.05em; }
+      #a4 { border-radius: 0; border: none; box-shadow: 0 10px 100px 0 rgba(34,36,38,.1); transition: all 0.2s linear; }
+      #a4:hover { box-shadow: 0 10px 100px 0 rgba(34,36,38,.3); }
+      .ui.fitted.fat.divider { border-top: 0.30em solid rgb(255, 255, 255); width: 100%; }
+      .pucase{text-transform: uppercase; font-size: 0.9rem;}
+      a { color: rgb(0, 0, 0); text-decoration: none; }
     </style>
+    <title>Sergey Bychkov — Résumé</title>
   </head>
   <body>
     <div class="ui container">
-        <div class="ui inverted text container segment center aligned">
-            <div class="ui text container">
-                <h1 class="ui inverted header">
-                  Sergey Bychkov
-                </h1>
-            </div>
-            <div class="ui inverted five column centered grid">
-                <div class="column">
-                    <div class="ui divider"></div>
+        <div class="ui very padded segment" id="a4">
+          <div class="ui inverted basic padded segment stackable grid">
+                <div class="ui row">
+                    <div class="ui sixteen wide center aligned column">
+                        <h1>Sergey</h1>
+                    </div>
+                    <div class="ui sixteen wide center aligned column">
+                        <h1>Bychkov</h1>
+                    </div>
+                </div>
+                <div class="ui row centered">
+                    <div class="ui two wide column">
+                        <div class="ui fitted fat divider"></div>
+                    </div>
+                </div>
+                
+                <div class="ui row">
+                    <div class="ui sixteen wide center aligned column">
+                        <h3>Forensic computer analist</h3>
+                    </div>
+                </div>
+          </div>
+
+          <div class="ui basic padded segment stackable vertically divided grid">
+              <div class="ui row">
+                  <div class="ui sixteen wide column center aligned">
+                      <div class="ui horizontal divided list">
+                          <div class="item">
+                            <i class="facebook f icon"></i>
+                            <div class="content">
+                                <a href="https://www.facebook.com/appachey">My Facebook page</a>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <i class="at icon"></i>
+                            <div class="content">
+                              <a href="mailto:appachey@gmail.com">appachey@gmail.com</a>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <i class="phone icon"></i>
+                            <div class="content">
+                                <a href="tel:+380958504928">+38(095)8504928</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="ui row">
+                <div class="ui sixteen wide column center aligned">
+                    <h4>Résumé</h4>
+                    <p>Hello! My name is Sergey Bychkov. I am skilled certified forensic expert with 6 years of computer forensics. In my work, I investigate the evidence on digital media that criminals leave when they commit crimes using computer technology. This is a very important and responsible job, because from my conclusions sometimes the further destinies of people are decided.</p>
                 </div>
             </div>
-        </div>
-      <div class="ui basic segment">
-        <div class="ui grid">
-          <div class="ui row">
-            <div class="ui column">1</div>
-            <div class="ui column">2</div>
+
+            <div class="ui three column divided row center aligned">
+                    <div class="column">
+                        <h4>Skills</h4>
+                        <p class="pucase">php html css java c mysql microsoft office cooking ftk linux windows</p>
+                    </div>
+                    <div class="column">
+                        <h4>Likes</h4>
+                        <p class="pucase">movies computer games basketball cooking metallica pantera slayer slipknot soad photograpy programming beer with friends metaxa</p>
+                    </div>
+                    <div class="column">
+                        <h4>Dislikes</h4>
+                        <p class="pucase">football russian rap tv hot weather mayonnaise dancing</p>
+                    </div>
+            </div>
+
+            <div class="ui row">
+                <div class="ui sixteen wide column">
+                    <h4>Timeline and Experience</h4>
+                </div>
+            </div>
           </div>
-          <div class="ui row">
-            <div class="ui column">3</div>
-            <div class="ui column">4</div>
-          </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
