@@ -53,8 +53,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/divider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/label.min.css">
-    <!--<link rel="stylesheet" href="styles/style.css">-->
-    <style type="text/css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--<style type="text/css">
       html { font-size: 14px; }
       html, body { height: 100%; }
       body { font-weight: 300; font-family: 'Raleway', sans-serif; line-height: 1.4285em; color: rgba(0, 0, 0, 0.87); }
@@ -83,14 +83,32 @@
       #a4:hover { box-shadow: 0 10px 100px 0 rgba(34,36,38,.3); }
       .ui.fitted.fat.divider { border-top: 0.30em solid rgb(255, 255, 255); width: 100%; }
       .pucase{text-transform: uppercase; font-size: 0.9rem;}
-      a { color: rgb(0, 0, 0); text-decoration: none; }
-    </style>
+      a { color: rgb(75, 125, 235); text-decoration: none; }
+      .ui.container.bordered{border-width: 1px; border-style: solid;}
+      .ui.basic.segment.stackable.grid.topmarg{margin-top: 0;}
+
+    @media only screen and (max-width: 767px) {
+    .ui.container { margin: 0 !important; }
+    #desktop { margin: 0; }
+    #a4 { padding: 0; }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #desktop { margin: calc((100% - 723px) / 2) 0; }
+    }		
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        #desktop { margin: calc((100% - 933px) / 2) 0; }
+    }		
+    @media only screen and (min-width: 1200px) {
+        #desktop { margin: calc((100% - 1127px) / 2) 0; }
+    }
+    </style>-->
     <title>Sergey Bychkov — Résumé</title>
   </head>
   <body>
-    <div class="ui container">
+    <div id="desktop" class="ui container">
         <div class="ui very padded segment" id="a4">
-          <div class="ui inverted basic padded segment stackable grid">
+          <div class="ui container bordered">
+            <div class="ui inverted basic padded segment stackable grid">
                 <div class="ui row">
                     <div class="ui sixteen wide center aligned column">
                         <h1>Sergey</h1>
@@ -113,38 +131,38 @@
           </div>
 
           <div class="ui basic padded segment stackable vertically divided grid">
-              <div class="ui row">
-                  <div class="ui sixteen wide column center aligned">
-                      <div class="ui horizontal divided list">
-                          <div class="item">
-                            <i class="facebook f icon"></i>
-                            <div class="content">
-                                <a href="https://www.facebook.com/appachey">My Facebook page</a>
+                <div class="ui row">
+                    <div class="ui sixteen wide column center aligned">
+                        <div class="ui horizontal divided list">
+                            <div class="item">
+                                <i class="facebook f icon"></i>
+                                <div class="content">
+                                    <a href="https://www.facebook.com/appachey">My Facebook page</a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="item">
-                            <i class="at icon"></i>
-                            <div class="content">
-                              <a href="mailto:appachey@gmail.com">appachey@gmail.com</a>
+                            <div class="item">
+                                <i class="at icon"></i>
+                                <div class="content">
+                                <a href="mailto:appachey@gmail.com">appachey@gmail.com</a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="item">
-                            <i class="phone icon"></i>
-                            <div class="content">
-                                <a href="tel:+380958504928">+38(095)8504928</a>
+                            <div class="item">
+                                <i class="phone icon"></i>
+                                <div class="content">
+                                    <a href="tel:+380958504928">+38(095)8504928</a>
+                                </div>
                             </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="ui row">
-                <div class="ui sixteen wide column center aligned">
-                    <h4>Résumé</h4>
-                    <p>Hello! My name is Sergey Bychkov. I am skilled certified forensic expert with 6 years of computer forensics. In my work, I investigate the evidence on digital media that criminals leave when they commit crimes using computer technology. This is a very important and responsible job, because from my conclusions sometimes the further destinies of people are decided.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="ui row">
+                    <div class="ui sixteen wide column center aligned">
+                        <h4>Résumé</h4>
+                        <p>Hello! My name is Sergey Bychkov. I am skilled certified forensic expert with 6 years of computer forensics. In my work, I investigate the evidence on digital media that criminals leave when they commit crimes using computer technology. This is a very important and responsible job, because from my conclusions sometimes the further destinies of people are decided.</p>
+                    </div>
+                </div>
 
-            <div class="ui three column divided row center aligned">
+                <div class="ui three column divided row center aligned">
                     <div class="column">
                         <h4>Skills</h4>
                         <p class="pucase">php html css java c mysql microsoft office cooking ftk linux windows</p>
@@ -157,13 +175,188 @@
                         <h4>Dislikes</h4>
                         <p class="pucase">football russian rap tv hot weather mayonnaise dancing</p>
                     </div>
-            </div>
-
-            <div class="ui row">
-                <div class="ui sixteen wide column">
-                    <h4>Timeline and Experience</h4>
                 </div>
-            </div>
+                <div class="ui row"></div>
+                <div class="ui basic segment stackable grid topmarg">
+                    <div class="ui row">
+                        <div class="ui sixteen wide column">
+                            <h4>Timeline and Experience</h4>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>1987</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <p><strong>Born 1 July 1987 in Kharkiv</strong></p>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>1987 - 1994</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <p><strong>Grew and getting stronger than before</strong></p>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>since 1994</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Dreaming to became a fighter pilot</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">don`t know why</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>1999</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Started playing basketball</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">grew a bit</div>
+                                        <div class="item">I love this game</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2004</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Graduated #56 Middle School in Kharkiv</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">still dont understand what i am going to do further</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2004</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Entered <a href="http://www.univer.kharkov.ua/ru"><i>V. N. Karazin Kharkiv National University</i></a>, <a href="http://rbecs.karazin.ua/?lang=ru"><i>School of Radiophysics, Biomedical Electronics and Computer Systems</i></a></strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">too much physics</div>
+                                        <div class="item">still playing basketball</div>
+                                        <div class="item">met many important people in my life</div>
+                                        <div class="item">student`s years was great</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2006 - 2008</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Started studying at the <a href="http://www.hups.mil.gov.ua/pidgotovka-oficeriv-zapasy/"><i>Faculty of Reserve Officers Training</i></a></strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">some part of a dream to become a fighter pilot are come true</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2010 - 2012</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>First job: District Militia Inspector of Moskovskiy District in Kharkiv of MIA Ukraine</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">great mistake</div>
+                                        <div class="item">anyway, gained some experience of working Government Structures</div>
+                                        <div class="item">blue uniform</div>
+                                        <div class="item">took part in the protection of all public events in Kharkov</div>
+                                        <div class="item">blue uniform</div>
+                                        <div class="item">hate football even more than before</div>
+                                        <div class="item">weekend? What is it?</div>
+                                        <div class="item">blue uniform</div>
+                                        <div class="item">and more negative memories</div>
+                                        <div class="item">not reccommended</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2012 - 2015</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong>Computer Analist in Forensic Service of MIA Ukraine</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">still blue uniform</div>
+                                        <div class="item">finally the work that I like</div>
+                                        <div class="item">computer forensics</div>
+                                        <div class="item">
+                                            studied many forensics software (
+                                                <a href="https://accessdata.com/"><i>AccessData FTK, AccessData FTK imager, </i></a>
+                                                <a href="https://www.sleuthkit.org/"><i>Autopsy, SleuthKit, </i></a>
+                                                <a href="http://www.x-ways.net/forensics/"><i>X-Ways Forensics, </i></a>
+                                                <a href="https://www.oxygensoftware.ru/ru/"><i>Oxygen, </i></a>
+                                                <a href="https://www.magnetforensics.com/"><i>Magnet AXIOM</i></a>
+                                                ...)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>2015 - present</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <strong><a href="http://ndekc.kh.ua/"><i>Computer Analist in Forensic Service of MIA Ukraine</i></a> (but now as civilian)</strong>
+                                    <div class="ui bulleted list">
+                                        <div class="item">seriously thinking with colleagues to burn blue uniform, at last free of it</div>
+                                        <div class="item">days become more colorfull</div>
+                                        <div class="item">began to study the basics of programming in PHP, Java</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui row">
+                        <div class="ui three wide column">
+                            <p>9 March 2018</p>
+                        </div>
+                        <div class="ui thirteen wide column">
+                            <p><strong>Married <a href="https://www.facebook.com/profile.php?id=100005498550634"><em>Anastsiya Yarova</em></a></strong></p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          
+          
           </div>
         </div>
     </div>
